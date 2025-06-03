@@ -57,14 +57,16 @@
       document.addEventListener('DOMContentLoaded', function() {
         const currentPath = window.location.pathname;
         
+        const basePath = '{{ site.baseurl }}';
+        
         // Prefetch menu page when on homepage (most common user journey)
-        if (currentPath === '/' || currentPath === '/index.html') {
-          setTimeout(() => prefetchPage('/menu/'), 1000);
+        if (currentPath === basePath + '/' || currentPath === basePath + '/index.html' || currentPath === basePath) {
+          setTimeout(() => prefetchPage(basePath + '/menu'), 1000);
         }
         
         // Prefetch homepage when on other pages
-        if (currentPath !== '/' && currentPath !== '/index.html') {
-          setTimeout(() => prefetchPage('/'), 1500);
+        if (currentPath !== basePath + '/' && currentPath !== basePath + '/index.html' && currentPath !== basePath) {
+          setTimeout(() => prefetchPage(basePath + '/'), 1500);
         }
       });
       
