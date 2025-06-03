@@ -1,0 +1,27 @@
+# Site settings
+title: "Café Lindgreen"
+description: "Embracing Scandinavian simplicity, one cup at a time."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Contact information
+email: "info@cafelindgreen.com"
+phone: "+1 (555) 123-4567"
+address: "123 Oak Street, City Center, 10001"
+
+# Navigation
+navigation:
+  - name: "Front"
+    url: "/"
+  - name: "Menu"
+    url: "/menu"
+  - name: "Contact"
+    url: "/contact"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# GitHub Pages settings
+github: [metadata]
