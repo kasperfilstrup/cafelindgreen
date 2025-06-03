@@ -4,6 +4,9 @@ description: "Embracing Scandinavian simplicity, one cup at a time."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cafelindgreen.dk" # the base hostname & protocol for your site
 
+# GitHub Pages HTTPS enforcement
+enforce_ssl: cafelindgreen.dk
+
 # Contact information
 email: "info@cafelindgreen.com"
 phone: "+1 (555) 123-4567"

@@ -15,7 +15,7 @@
               <a
                 class="text-sm text-[#b8a899] hover:text-white transition-colors"
                 href="{{ item.url | relative_url }}"
-                data-prefetch="{{ item.url | relative_url }}"
+                data-prefetch="{{ site.url }}{{ item.url | relative_url }}"
                 onmouseenter="prefetchPage(this.dataset.prefetch)"
               >{{ item.name }}</a>
             </li>

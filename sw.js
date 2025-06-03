@@ -1,5 +1,3 @@
----
----
 const CACHE_NAME = 'cafe-lindgreen-v1.0.0';
 const urlsToCache = [
   '{{ site.baseurl }}/',

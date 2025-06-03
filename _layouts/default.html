@@ -58,15 +58,16 @@
         const currentPath = window.location.pathname;
         
         const basePath = '{{ site.baseurl }}';
+        const siteUrl = '{{ site.url }}';
         
         // Prefetch menu page when on homepage (most common user journey)
         if (currentPath === basePath + '/' || currentPath === basePath + '/index.html' || currentPath === basePath) {
-          setTimeout(() => prefetchPage(basePath + '/menu'), 1000);
+          setTimeout(() => prefetchPage(siteUrl + basePath + '/menu'), 1000);
         }
         
         // Prefetch homepage when on other pages
         if (currentPath !== basePath + '/' && currentPath !== basePath + '/index.html' && currentPath !== basePath) {
-          setTimeout(() => prefetchPage(basePath + '/'), 1500);
+          setTimeout(() => prefetchPage(siteUrl + basePath + '/'), 1500);
         }
       });
       
