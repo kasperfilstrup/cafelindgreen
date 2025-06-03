@@ -42,7 +42,21 @@
   type="image/svg+xml"
 />
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Critical CSS inlined for instant rendering -->
+<style>
+  html{font-family:Plus Jakarta Sans,Noto Sans,sans-serif}
+  body{background-color:#fcfaf8}
+  .hero-gradient{background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.1))}
+  .cafe-btn{display:inline-flex;min-width:84px;max-width:480px;margin-left:auto;margin-right:auto;cursor:pointer;align-items:center;justify-content:center;overflow:hidden;border-radius:9999px;height:3rem;padding-left:1.5rem;padding-right:1.5rem;background-color:#e57f19;color:#fff;font-size:1rem;font-weight:700;line-height:1.5;letter-spacing:.015em;transition:background-color .15s}
+  .cafe-btn:hover{background-color:#d17316}
+  .header{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-bottom:1px solid #f3ede7;padding:1rem 1.5rem}
+  .nav-link{color:#5a4e45;font-size:.875rem;font-weight:500;line-height:1.5;transition:color .15s}
+  .nav-link:hover{color:#1b140e}
+</style>
+
+<!-- Load full stylesheet asynchronously -->
+<link rel="preload" href="{{ '/assets/css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}"></noscript>
 
 <!-- Jekyll feed plugin -->
 {% feed_meta %}

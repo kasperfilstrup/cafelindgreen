@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom critical CSS for immediate rendering */
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #fcfaf8;
+  }
+}
+
+/* Critical above-the-fold styles that should be inlined */
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+  }
+  
+  .cafe-btn {
+    @apply inline-flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-cafe-orange text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-cafe-orange-dark transition-colors;
+  }
+  
+  .cafe-card {
+    @apply flex flex-col gap-4 bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+}

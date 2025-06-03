@@ -40,3 +40,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - memory-bank/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - src/
