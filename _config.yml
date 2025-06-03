@@ -1,8 +1,8 @@
 # Site settings
 title: "Café Lindgreen"
 description: "Embracing Scandinavian simplicity, one cup at a time."
-baseurl: "/cafelindgreen" # the subpath of your site, e.g. /blog
-url: "https://kasperfilstrup.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cafelindgreen.dk" # the base hostname & protocol for your site
 
 # Contact information
 email: "info@cafelindgreen.com"
