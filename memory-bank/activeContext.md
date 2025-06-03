@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # Active Context - Current Implementation Status
 
 ## Current Work Focus
@@ -83,6 +87,6 @@ Successfully completed conversion of static HTML files to Jekyll static site wit
 ## Key Implementation Notes
 - Preserved exact color scheme: `#1b140e`, `#5a4e45`, `#e57f19`, etc.
 - Maintained responsive breakpoints: `md:`, `lg:`, `xl:`
-- Used Liquid templating for dynamic content: `{{ site.title }}`, `{% for %}`
+- Used Liquid templating for dynamic content: `{% raw %}{{ site.title }}{% endraw %}`, `{% raw %}{% for %}{% endraw %}`
 - Structured YAML for easy editing by family member
 - GitHub Pages compatible without additional configuration

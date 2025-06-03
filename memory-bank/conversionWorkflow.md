@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # HTML to Jekyll Conversion Workflow
 
 ## Overview
@@ -205,7 +209,7 @@ Ensure all files are present:
 ```
 
 #### 6.2 Verify Template Variables
-Check that all `{{ site.* }}` and `{{ page.* }}` variables are defined.
+Check that all `{% raw %}{{ site.* }}{% endraw %}` and `{% raw %}{{ page.* }}{% endraw %}` variables are defined.
 
 #### 6.3 Test Responsive Design
 Ensure all responsive classes are preserved from original HTML.
@@ -235,13 +239,13 @@ Update memory bank files if new patterns were discovered.
 - **Image galleries**: Consider lazy loading
 
 ### Template Variables to Use
-- `{{ site.title }}` - Business name
-- `{{ site.description }}` - Business description  
-- `{{ site.email }}` - Contact email
-- `{{ site.phone }}` - Phone number
-- `{{ site.address }}` - Physical address
-- `{{ page.title }}` - Page-specific title
-- `{{ page.description }}` - Page meta description
+- `{% raw %}{{ site.title }}{% endraw %}` - Business name
+- `{% raw %}{{ site.description }}{% endraw %}` - Business description  
+- `{% raw %}{{ site.email }}{% endraw %}` - Contact email
+- `{% raw %}{{ site.phone }}{% endraw %}` - Phone number
+- `{% raw %}{{ site.address }}{% endraw %}` - Physical address
+- `{% raw %}{{ page.title }}{% endraw %}` - Page-specific title
+- `{% raw %}{{ page.description }}{% endraw %}` - Page meta description
 
 ## Troubleshooting
 

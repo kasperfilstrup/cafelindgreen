@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # Technical Context - Jekyll & GitHub Pages Setup
 
 ## Technology Stack

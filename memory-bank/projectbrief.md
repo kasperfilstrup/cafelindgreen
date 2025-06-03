@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # Café Lindgreen Website - Project Brief
 
 ## Project Overview

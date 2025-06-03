@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # Product Context - Café Lindgreen Website
 
 ## Why This Project Exists

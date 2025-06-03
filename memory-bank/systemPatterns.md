@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # System Patterns - Jekyll Static Site Architecture
 
 ## Core Architecture Pattern
@@ -43,12 +47,12 @@ flowchart TD
 ### 2. Data-Driven Content Pattern
 - **Menu**: Extracted to `_data/menu.yml` for easy editing
 - **Configuration**: Site-wide settings in `_config.yml`
-- **Template Loops**: Use Jekyll's `{% for %}` to render data
+- **Template Loops**: Use Jekyll's `{% raw %}{% for %}{% endraw %}` to render data
 
 ### 3. Layout Inheritance Pattern
-- **Base Layout**: `_layouts/default.html` with `{{ content }}`
+- **Base Layout**: `_layouts/default.html` with `{% raw %}{{ content }}{% endraw %}`
 - **Page Content**: Individual `.md` files specify layout in frontmatter
-- **Component Inclusion**: `{% include %}` tags for shared elements
+- **Component Inclusion**: `{% raw %}{% include %}{% endraw %}` tags for shared elements
 
 ## File Organization Strategy
 
@@ -81,7 +85,7 @@ flowchart TD
 1. Jekyll reads `.md` file with layout specification
 2. Processes frontmatter and content through Liquid
 3. Wraps content in specified layout
-4. Includes shared components via `{% include %}`
+4. Includes shared components via `{% raw %}{% include %}{% endraw %}`
 5. Outputs static HTML
 
 ## Styling Architecture

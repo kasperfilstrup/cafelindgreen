@@ -1,3 +1,7 @@
+---
+liquid: false
+---
+
 # Progress Tracking - Café Lindgreen Jekyll Site
 
 ## ✅ What Works (Completed)
