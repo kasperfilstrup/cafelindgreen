@@ -23,6 +23,8 @@
       <a
         class="text-[#5a4e45] hover:text-[#1b140e] text-sm font-medium leading-normal transition-colors{% if page.url == item.url %} text-[#1b140e]{% endif %}"
         href="{{ item.url | relative_url }}"
+        data-prefetch="{{ item.url | relative_url }}"
+        onmouseenter="prefetchPage(this.dataset.prefetch)"
       >{{ item.name }}</a>
     {% endfor %}
   </nav>

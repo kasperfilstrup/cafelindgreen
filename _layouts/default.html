@@ -20,5 +20,76 @@
       
     </div>
   </div>
+
+  <!-- Performance optimization: Smart page prefetching -->
+  <script>
+    (function() {
+      let prefetchedPages = new Set();
+      
+      // Prefetch a page when user hovers over a link
+      window.prefetchPage = function(url) {
+        // Don't prefetch current page or already prefetched pages
+        if (url === window.location.pathname || prefetchedPages.has(url)) {
+          return;
+        }
+        
+        // Create prefetch link
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = url;
+        link.as = 'document';
+        
+        // Add to document head
+        document.head.appendChild(link);
+        prefetchedPages.add(url);
+        
+        // Optional: Remove link after prefetch completes to keep DOM clean
+        link.onload = link.onerror = function() {
+          setTimeout(() => {
+            if (link.parentNode) {
+              link.parentNode.removeChild(link);
+            }
+          }, 1000);
+        };
+      };
+      
+      // Smart prefetching: Prefetch most likely next page based on current page
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentPath = window.location.pathname;
+        
+        // Prefetch menu page when on homepage (most common user journey)
+        if (currentPath === '/' || currentPath === '/index.html') {
+          setTimeout(() => prefetchPage('/menu/'), 1000);
+        }
+        
+        // Prefetch homepage when on other pages
+        if (currentPath !== '/' && currentPath !== '/index.html') {
+          setTimeout(() => prefetchPage('/'), 1500);
+        }
+      });
+      
+      // Intersection observer for footer links (prefetch when footer becomes visible)
+      if ('IntersectionObserver' in window) {
+        const footerObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              // User scrolled to footer, prefetch remaining pages
+              const navLinks = document.querySelectorAll('[data-prefetch]');
+              navLinks.forEach(function(link) {
+                const url = link.dataset.prefetch;
+                setTimeout(() => prefetchPage(url), Math.random() * 500);
+              });
+              footerObserver.disconnect(); // Only do this once
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        const footer = document.querySelector('footer');
+        if (footer) {
+          footerObserver.observe(footer);
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
