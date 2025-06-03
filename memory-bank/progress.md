@@ -95,6 +95,21 @@ sandwiches: [3 items]
 - Menu items are hardcoded in English (internationalization would need custom solution)
 - Social media links are placeholder (need real URLs)
 
+## ✅ GitHub Pages Deployment Issues Fixed
+**Date**: 2025-01-06
+**Issues Resolved**:
+1. **Service Worker Cache Errors**: Added Jekyll frontmatter to `sw.js` so Liquid template variables are processed correctly
+2. **Mixed Content Errors**: Fixed prefetch URLs to use relative paths instead of absolute URLs that could cause HTTP/HTTPS mixing
+3. **Font Preload Warnings**: Removed specific font file preload that wasn't being used quickly enough
+
+**Technical Details**:
+- `sw.js` now has `---` frontmatter at top for Jekyll processing
+- Removed problematic font URL from service worker cache list
+- Changed prefetch logic from `siteUrl + basePath + '/menu'` to `basePath + '/menu'`
+- Removed `<link rel="preload" href="...woff2" as="font">` that caused timing warnings
+
+**Result**: Clean console with no deployment errors on GitHub Pages
+
 ## 📝 Next Steps for User
 1. Initialize git repository
 2. Push to GitHub

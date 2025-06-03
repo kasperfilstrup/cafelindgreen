@@ -1,11 +1,12 @@
+---
+---
 const CACHE_NAME = 'cafe-lindgreen-v1.0.0';
 const urlsToCache = [
   '{{ site.baseurl }}/',
   '{{ site.baseurl }}/menu',
   '{{ site.baseurl }}/contact',
   '{{ site.baseurl }}/assets/css/styles.css',
-  'https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800',
-  'https://fonts.gstatic.com/s/plusjakartasans/v7/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_qU79TR_H.woff2'
+  'https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800'
 ];
 
 // Install event - cache resources
