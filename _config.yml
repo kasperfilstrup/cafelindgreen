@@ -1,11 +1,14 @@
 # Site settings
 title: "Café Lindgreen"
 description: "Embracing Scandinavian simplicity, one cup at a time."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cafelindgreen.dk" # the base hostname & protocol for your site
+baseurl: "/cafelindgreen" # the subpath of your site, e.g. /blog
+url: "https://kasperfilstrup.github.io" # the base hostname & protocol for your site
 
-# GitHub Pages HTTPS enforcement
-enforce_ssl: cafelindgreen.dk
+# Custom domain configuration (commented out for development)
+# When ready to use custom domain, uncomment these lines and create CNAME file:
+# baseurl: ""
+# url: "https://cafelindgreen.dk"
+# enforce_ssl: cafelindgreen.dk
 
 # Contact information
 email: "info@cafelindgreen.com"
