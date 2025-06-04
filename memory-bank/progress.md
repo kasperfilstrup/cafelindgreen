@@ -147,6 +147,19 @@ sandwiches: [3 items]
 
 **Ready for GitHub Pages Deployment**: Site is fully tested and verified to work correctly
 
+## ✅ Mixed Content Prefetch Errors Fixed
+**Date**: 2025-01-06
+**Issue**: Prefetch links were using absolute URLs that caused mixed content errors when GitHub Pages redirected to custom domain over HTTP
+**Root Cause**: `data-prefetch` attributes in header.html and footer.html included `{{ site.url }}` which generated absolute URLs
+**Solution**: Changed prefetch URLs to use relative paths only
+
+**Technical Changes**:
+- `_includes/header.html`: Changed `data-prefetch="{{ site.url }}{{ item.url | relative_url }}"` to `data-prefetch="{{ item.url | relative_url }}"`
+- `_includes/footer.html`: Same change applied to footer navigation links
+- Verified in generated HTML: URLs now show as `/cafelindgreen/menu` instead of absolute URLs
+
+**Final Result**: All mixed content errors eliminated - prefetch and service worker now work correctly on GitHub Pages
+
 ## 📝 Next Steps for User
 1. Initialize git repository
 2. Push to GitHub
