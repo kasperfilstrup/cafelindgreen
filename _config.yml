@@ -26,16 +26,11 @@ navigation:
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 # Permalink settings for clean URLs
 permalink: pretty
 
-# GitHub Pages settings
-github: [metadata]
-
-# Jekyll 4.0 compatibility for GitHub Pages
+# Jekyll compatibility for GitHub Pages
 kramdown:
   input: GFM
   hard_wrap: false
