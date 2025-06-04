@@ -15,7 +15,15 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        // Cache resources individually to handle failures gracefully
+        const cachePromises = urlsToCache.map(url => {
+          return cache.add(url).catch(error => {
+            console.warn('Failed to cache:', url, error);
+            // Don't fail the entire installation for individual cache failures
+            return Promise.resolve();
+          });
+        });
+        return Promise.all(cachePromises);
       })
   );
 });
