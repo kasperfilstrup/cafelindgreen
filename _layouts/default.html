@@ -1,98 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body class="bg-[#fcfaf8]">
-  <div
-    class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
-    style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
-  >
-    <div class="layout-container flex h-full grow flex-col">
-      
-      {% include header.html %}
-      
-      <main class="flex flex-1 flex-col">
-        {{ content }}
-      </main>
-      
-      {% include footer.html %}
-      
-    </div>
-  </div>
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="bg-[#fcfaf8]">
+    <div
+      class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+      style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        {% include header.html %}
 
-  <!-- Performance optimization: Smart page prefetching -->
-  <script>
-    (function() {
-      let prefetchedPages = new Set();
-      
-      // Prefetch a page when user hovers over a link
-      window.prefetchPage = function(url) {
-        // Don't prefetch current page or already prefetched pages
-        if (url === window.location.pathname || prefetchedPages.has(url)) {
-          return;
-        }
-        
-        // Create prefetch link
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.href = url;
-        link.as = 'document';
-        
-        // Add to document head
-        document.head.appendChild(link);
-        prefetchedPages.add(url);
-        
-        // Optional: Remove link after prefetch completes to keep DOM clean
-        link.onload = link.onerror = function() {
-          setTimeout(() => {
-            if (link.parentNode) {
-              link.parentNode.removeChild(link);
-            }
-          }, 1000);
-        };
-      };
-      
-      // Smart prefetching: Prefetch most likely next page based on current page
-      document.addEventListener('DOMContentLoaded', function() {
-        const currentPath = window.location.pathname;
-        
-        const basePath = '{{ site.baseurl }}';
-        const siteUrl = '{{ site.url }}';
-        
-        // Prefetch menu page when on homepage (most common user journey)
-        if (currentPath === basePath + '/' || currentPath === basePath + '/index.html' || currentPath === basePath) {
-          setTimeout(() => prefetchPage(basePath + '/menu'), 1000);
-        }
-        
-        // Prefetch homepage when on other pages
-        if (currentPath !== basePath + '/' && currentPath !== basePath + '/index.html' && currentPath !== basePath) {
-          setTimeout(() => prefetchPage(basePath + '/'), 1500);
-        }
-      });
-      
-      // Intersection observer for footer links (prefetch when footer becomes visible)
-      if ('IntersectionObserver' in window) {
-        const footerObserver = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              // User scrolled to footer, prefetch remaining pages
-              const navLinks = document.querySelectorAll('[data-prefetch]');
-              navLinks.forEach(function(link) {
-                const url = link.dataset.prefetch;
-                setTimeout(() => prefetchPage(url), Math.random() * 500);
-              });
-              footerObserver.disconnect(); // Only do this once
-            }
-          });
-        }, { threshold: 0.1 });
-        
-        const footer = document.querySelector('footer');
-        if (footer) {
-          footerObserver.observe(footer);
-        }
-      }
-    })();
-  </script>
-</body>
+        <main class="flex flex-1 flex-col">{{ content }}</main>
+
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
 </html>
