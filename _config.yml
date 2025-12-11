@@ -1,8 +1,8 @@
 # Site settings
-title: "Café Lindgreen"
-description: "Embracing Scandinavian simplicity, one cup at a time."
-baseurl: "/cafelindgreen" # the subpath of your site, e.g. /blog
-url: "https://kasperfilstrup.github.io" # the base hostname & protocol for your site
+title: 'Café Lindgreen'
+description: 'Embracing Scandinavian simplicity, one cup at a time.'
+baseurl: '/cafelindgreen' # the subpath of your site, e.g. /blog
+url: 'https://kasperfilstrup.github.io' # the base hostname & protocol for your site
 
 # Custom domain configuration (commented out for development)
 # When ready to use custom domain, uncomment these lines and create CNAME file:
@@ -11,18 +11,18 @@ url: "https://kasperfilstrup.github.io" # the base hostname & protocol for your 
 # enforce_ssl: cafelindgreen.dk
 
 # Contact information
-email: "info@cafelindgreen.com"
-phone: "+1 (555) 123-4567"
-address: "123 Oak Street, City Center, 10001"
+email: 'info@cafelindgreen.com'
+phone: '+1 (555) 123-4567'
+address: '123 Oak Street, City Center, 10001'
 
 # Navigation
 navigation:
-  - name: "Front"
-    url: "/"
-  - name: "Menu"
-    url: "/menu"
-  - name: "Contact"
-    url: "/contact"
+  - name: 'Front'
+    url: '/'
+  - name: 'Menu'
+    url: '/menu/'
+  - name: 'Contact'
+    url: '/contact/'
 
 # Build settings
 markdown: kramdown
@@ -34,7 +34,7 @@ permalink: pretty
 kramdown:
   input: GFM
   hard_wrap: false
-  
+
 # Exclude development files
 exclude:
   - Gemfile
