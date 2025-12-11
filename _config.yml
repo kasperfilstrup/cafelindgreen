@@ -1,6 +1,6 @@
 # Site settings
 title: 'Café Lindgreen'
-description: 'Embracing Scandinavian simplicity, one cup at a time.'
+description: 'Omfavner skandinavisk enkelhed, én kop ad gangen.'
 baseurl: '/cafelindgreen' # the subpath of your site, e.g. /blog
 url: 'https://kasperfilstrup.github.io' # the base hostname & protocol for your site
 
@@ -17,11 +17,11 @@ address: '123 Oak Street, City Center, 10001'
 
 # Navigation
 navigation:
-  - name: 'Front'
+  - name: 'Forside'
     url: '/'
   - name: 'Menu'
     url: '/menu/'
-  - name: 'Contact'
+  - name: 'Kontakt'
     url: '/contact/'
 
 # Build settings

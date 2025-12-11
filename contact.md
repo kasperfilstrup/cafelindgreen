@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Contact Us"
-description: "We'd love to hear from you! Whether you have a question about our menu, want to book a table, or just want to say hello, please don't hesitate to reach out."
+title: "Kontakt Os"
+description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om vores menu, ønsker at booke et bord, eller bare vil sige hej, så tøv ikke med at kontakte os."
 ---
 
 <div class="flex-1 px-10 py-12 lg:px-20 xl:px-40">
@@ -19,14 +19,14 @@ description: "We'd love to hear from you! Whether you have a question about our 
     <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
       <section>
         <h2 class="text-[#1b140e] text-2xl font-semibold mb-6">
-          Our Location
+          Vores Lokation
         </h2>
         <div class="space-y-6">
           <div>
             <h3
               class="text-[#e57f19] text-sm font-semibold uppercase tracking-wider mb-1"
             >
-              Address
+              Adresse
             </h3>
             <p class="text-[#574533] text-base">
               {{ site.address }}
@@ -36,7 +36,7 @@ description: "We'd love to hear from you! Whether you have a question about our 
             <h3
               class="text-[#e57f19] text-sm font-semibold uppercase tracking-wider mb-1"
             >
-              Phone
+              Telefon
             </h3>
             <p class="text-[#574533] text-base">{{ site.phone }}</p>
           </div>
@@ -62,7 +62,7 @@ description: "We'd love to hear from you! Whether you have a question about our 
       </section>
       <section>
         <h2 class="text-[#1b140e] text-2xl font-semibold mb-6">
-          Follow Us
+          Følg Os
         </h2>
         <div class="flex space-x-4">
           <a

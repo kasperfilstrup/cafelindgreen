@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Welcome to Café Lindgreen"
-description: "Experience the warmth of Scandinavian hospitality with our handcrafted coffee and pastries."
+title: "Velkommen til Café Lindgreen"
+description: "Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede kaffe og bagværk."
 ---
 
 <section class="relative">
@@ -21,7 +21,7 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
       <h1
         class="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]"
       >
-        Welcome to {{ site.title }}
+        Velkommen til {{ site.title }}
       </h1>
       <h2
         class="text-white text-base sm:text-lg md:text-xl font-normal leading-normal mt-4 mb-8"
@@ -31,7 +31,7 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
       <a href="{{ '/menu' | relative_url }}"
         class="inline-flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e57f19] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d17316] transition-colors"
       >
-        <span class="truncate">View Menu</span>
+        <span class="truncate">Se Menu</span>
       </a>
     </div>
   </div>
@@ -43,15 +43,15 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
       <h1
         class="text-[#1b140e] text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight"
       >
-        Our Offerings
+        Vores Tilbud
       </h1>
       <p
         class="text-[#5a4e45] text-base sm:text-lg md:text-xl leading-normal max-w-2xl mx-auto mt-4"
       >
-        At {{ site.title }}, we blend the art of coffee making with the
-        simplicity of Scandinavian design. Our menu features a curated
-        selection of handcrafted beverages and freshly baked pastries,
-        all made with the finest ingredients.
+        Hos {{ site.title }} forener vi kunsten at lave kaffe med
+        enkelheden i skandinavisk design. Vores menu byder på et
+        udvalgt sortiment af håndlavede drikkevarer og friskbagt bagværk,
+        alt sammen lavet med de fineste ingredienser.
       </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -68,13 +68,13 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
           <p
             class="text-[#1b140e] text-xl font-semibold leading-normal mb-1"
           >
-            Cozy Ambiance
+            Hyggelig Atmosfære
           </p>
           <p
             class="text-[#7e6a55] text-sm font-normal leading-normal"
           >
-            Relax in our inviting space, designed with natural light
-            and minimalist decor.
+            Slap af i vores indbydende rum, designet med naturligt lys
+            og minimalistisk indretning.
           </p>
         </div>
       </div>
@@ -91,13 +91,13 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
           <p
             class="text-[#1b140e] text-xl font-semibold leading-normal mb-1"
           >
-            Artisanal Coffee
+            Håndlavet Kaffe
           </p>
           <p
             class="text-[#7e6a55] text-sm font-normal leading-normal"
           >
-            Savor the rich flavors of our expertly brewed coffee,
-            sourced from sustainable farms.
+            Nyd de rige smage af vores ekspertbrygget kaffe,
+            hentet fra bæredygtige gårde.
           </p>
         </div>
       </div>
@@ -114,13 +114,13 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
           <p
             class="text-[#1b140e] text-xl font-semibold leading-normal mb-1"
           >
-            Fresh Pastries
+            Frisk Bagværk
           </p>
           <p
             class="text-[#7e6a55] text-sm font-normal leading-normal"
           >
-            Indulge in our daily selection of pastries, baked fresh
-            with love and care.
+            Forkæl dig selv med vores daglige udvalg af bagværk, friskbagt
+            med kærlighed og omhu.
           </p>
         </div>
       </div>
@@ -133,17 +133,17 @@ description: "Experience the warmth of Scandinavian hospitality with our handcra
     <h1
       class="text-[#1b140e] text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tight"
     >
-      Visit Us
+      Besøg Os
     </h1>
     <p
       class="text-[#5a4e45] text-base sm:text-lg md:text-xl leading-normal mt-4 mb-8"
     >
-      Discover the warmth of {{ site.title }} at a location near you.
+      Oplev varmen fra {{ site.title }} på et sted tæt på dig.
     </p>
     <a href="{{ '/contact' | relative_url }}"
       class="flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e57f19] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d17316] transition-colors"
     >
-      <span class="truncate">Find us</span>
+      <span class="truncate">Find os</span>
     </a>
   </div>
 </section>

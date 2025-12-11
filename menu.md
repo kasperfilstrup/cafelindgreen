@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Our Menu"
-description: "Freshly brewed coffee, delicious pastries, and savory sandwiches."
+title: "Vores Menu"
+description: "Friskbrygget kaffe, lækre bagværk og velsmagende sandwiches."
 ---
 
 <div class="flex-1 px-10 md:px-20 lg:px-40 py-12">
@@ -22,7 +22,7 @@ description: "Freshly brewed coffee, delicious pastries, and savory sandwiches."
       <h2
         class="text-[#1b140e] text-3xl font-semibold tracking-tight mb-6 pb-3 border-b border-[#f3ede7]"
       >
-        Beverages
+        Drikkevarer
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
         {% for beverage in site.data.menu.beverages %}
@@ -44,7 +44,7 @@ description: "Freshly brewed coffee, delicious pastries, and savory sandwiches."
       <h2
         class="text-[#1b140e] text-3xl font-semibold tracking-tight mb-6 pb-3 border-b border-[#f3ede7]"
       >
-        Pastries
+        Bagværk
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
         {% for pastry in site.data.menu.pastries %}
