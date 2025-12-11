@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Velkommen til Café Lindgreen"
-description: "Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede kaffe og bagværk."
+title: 'Velkommen til Café Lindgreen'
+description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede kaffe og bagværk.'
 ---
 
 <section class="relative">
@@ -28,7 +28,7 @@ description: "Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede ka
       >
         {{ page.description }}
       </h2>
-      <a href="{{ '/menu' | relative_url }}"
+      <a href="{{ '/menu/' | relative_url }}"
         class="inline-flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e57f19] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d17316] transition-colors"
       >
         <span class="truncate">Se Menu</span>
@@ -140,7 +140,7 @@ description: "Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede ka
     >
       Oplev varmen fra {{ site.title }} på et sted tæt på dig.
     </p>
-    <a href="{{ '/contact' | relative_url }}"
+    <a href="{{ '/contact/' | relative_url }}"
       class="flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e57f19] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d17316] transition-colors"
     >
       <span class="truncate">Find os</span>
