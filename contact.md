@@ -4,76 +4,60 @@ title: "Kontakt Os"
 description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om vores menu, ønsker at booke et bord, eller bare vil sige hej, så tøv ikke med at kontakte os."
 ---
 
-<div class="flex-1 px-10 py-12 lg:px-20 xl:px-40">
-  <div class="mx-auto max-w-4xl">
-    <header class="mb-10 text-center">
-      <h1
-        class="text-[#1b140e] text-4xl font-bold tracking-tight sm:text-5xl"
-      >
+<div class="contact-page">
+  <div class="contact-page__container">
+    <header class="contact-page__header">
+      <h1 class="contact-page__title">
         {{ page.title }}
       </h1>
-      <p class="mt-4 text-[#574533] text-lg leading-relaxed">
+      <p class="contact-page__description">
         {{ page.description }}
       </p>
     </header>
-    <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+    <div class="contact-page__grid">
       <section>
-        <h2 class="text-[#1b140e] text-2xl font-semibold mb-6">
+        <h2 class="contact-page__section-title">
           Vores Lokation
         </h2>
-        <div class="space-y-6">
+        <div class="contact-page__info-list">
           <div>
-            <h3
-              class="text-[#e57f19] text-sm font-semibold uppercase tracking-wider mb-1"
-            >
+            <h3 class="contact-page__info-item-label">
               Adresse
             </h3>
-            <p class="text-[#574533] text-base">
+            <p class="contact-page__info-item-value">
               {{ site.address }}
             </p>
           </div>
           <div>
-            <h3
-              class="text-[#e57f19] text-sm font-semibold uppercase tracking-wider mb-1"
-            >
+            <h3 class="contact-page__info-item-label">
               Telefon
             </h3>
-            <p class="text-[#574533] text-base">{{ site.phone }}</p>
+            <p class="contact-page__info-item-value">{{ site.phone }}</p>
           </div>
           <div>
-            <h3
-              class="text-[#e57f19] text-sm font-semibold uppercase tracking-wider mb-1"
-            >
+            <h3 class="contact-page__info-item-label">
               Email
             </h3>
-            <p class="text-[#574533] text-base">
+            <p class="contact-page__info-item-value">
               {{ site.email }}
             </p>
           </div>
         </div>
         <div
-          class="mt-8 aspect-video w-full overflow-hidden rounded-xl shadow-lg"
+          class="contact-page__map"
           style="
             background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBznOdCTZQ18_it9gPmFfTtU3D2UY4lf9wykw6yJiwGajT-3u40Dvmy9pDNKy9LfUEVFD08HaXGwJGjTBxtKtm2TIsM4jc3JZd2jyaI94GmfQuaTTTaIq68VuMb5DUoIDocFzn9nv476AuEQg4r_Pr3gDu-_tMDpf3PNA_T7vVb2Y_Gr9YwwP5gWJg6KQBptbjj8yXjYjDqQ5hoCu21wIP9Ld1AFlm5Oa-v9JWs7f63l0OdpWfFJpdernEhUNHNngKvvKlTwIY7tr8');
-            background-size: cover;
-            background-position: center;
           "
         ></div>
       </section>
       <section>
-        <h2 class="text-[#1b140e] text-2xl font-semibold mb-6">
+        <h2 class="contact-page__section-title">
           Følg Os
         </h2>
-        <div class="flex space-x-4">
-          <a
-            class="flex flex-col items-center gap-2 rounded-lg p-4 text-[#574533] hover:bg-[#f3ede7] hover:text-[#e57f19] transition-colors w-28"
-            href="#"
-          >
-            <div
-              class="rounded-full bg-[#f3ede7] p-3 group-hover:bg-[#e57f19]/10"
-            >
+        <div class="contact-page__social">
+          <a href="#">
+            <div class="icon-wrapper">
               <svg
-                class="h-7 w-7"
                 fill="currentColor"
                 viewBox="0 0 256 256"
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,17 +67,11 @@ description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
                 ></path>
               </svg>
             </div>
-            <p class="text-sm font-medium">Facebook</p>
+            <p>Facebook</p>
           </a>
-          <a
-            class="flex flex-col items-center gap-2 rounded-lg p-4 text-[#574533] hover:bg-[#f3ede7] hover:text-[#e57f19] transition-colors w-28"
-            href="#"
-          >
-            <div
-              class="rounded-full bg-[#f3ede7] p-3 group-hover:bg-[#e57f19]/10"
-            >
+          <a href="#">
+            <div class="icon-wrapper">
               <svg
-                class="h-7 w-7"
                 fill="currentColor"
                 viewBox="0 0 256 256"
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +81,7 @@ description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
                 ></path>
               </svg>
             </div>
-            <p class="text-sm font-medium">Instagram</p>
+            <p>Instagram</p>
           </a>
         </div>
       </section>

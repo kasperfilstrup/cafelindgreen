@@ -2,36 +2,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Performance optimization: DNS prefetch and preconnect -->
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//fonts.gstatic.com">
-<link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//cdn.tailwindcss.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!-- Optimized Google Fonts loading with font-display: swap for instant text rendering -->
 <link
   rel="preload"
   as="style"
-  href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+  href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Ballet:opsz@16..72&display=swap"
   onload="this.onload=null;this.rel='stylesheet'"
 />
 <noscript>
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Ballet:opsz@16..72&display=swap"
   />
 </noscript>
 <!-- Performance meta tags -->
-<meta name="theme-color" content="#e57f19">
-<meta name="color-scheme" content="light">
-<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#e57f19" />
+<meta name="color-scheme" content="light" />
+<meta name="format-detection" content="telephone=no" />
 
-<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<title>
+  {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title
+  }}{% endif %}
+</title>
+<meta
+  name="description"
+  content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+/>
 
 <!-- Performance hints for browsers -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="no-referrer-when-downgrade">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
 <link
   href="data:image/svg+xml,%3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z' fill='%23e57f19'/%3E%3C/svg%3E"
@@ -40,17 +46,14 @@
 />
 
 <!-- Critical CSS inlined for instant rendering -->
-<style>
-  html{font-family:Plus Jakarta Sans,Noto Sans,sans-serif}
-  body{background-color:#fcfaf8}
-  .hero-gradient{background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.1))}
-  .cafe-btn{display:inline-flex;min-width:84px;max-width:480px;margin-left:auto;margin-right:auto;cursor:pointer;align-items:center;justify-content:center;overflow:hidden;border-radius:9999px;height:3rem;padding-left:1.5rem;padding-right:1.5rem;background-color:#e57f19;color:#fff;font-size:1rem;font-weight:700;line-height:1.5;letter-spacing:.015em;transition:background-color .15s}
-  .cafe-btn:hover{background-color:#d17316}
-  .header{display:flex;align-items:center;justify-content:center;white-space:nowrap;border-bottom:1px solid #f3ede7;padding:1rem 1.5rem}
-  .nav-link{color:#5a4e45;font-size:.875rem;font-weight:500;line-height:1.5;transition:color .15s}
-  .nav-link:hover{color:#1b140e}
-</style>
 
 <!-- Load full stylesheet asynchronously -->
-<link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
+<link
+  rel="preload"
+  href="{{ '/assets/css/main.css' | relative_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript
+  ><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"
+/></noscript>

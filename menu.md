@@ -4,80 +4,72 @@ title: "Vores Menu"
 description: "Friskbrygget kaffe, lækre bagværk og velsmagende sandwiches."
 ---
 
-<div class="flex-1 px-10 md:px-20 lg:px-40 py-12">
-  <div class="layout-content-container mx-auto max-w-[960px]">
-    <div class="mb-12 text-center">
-      <h1
-        class="text-[#1b140e] text-4xl md:text-5xl font-bold tracking-tight mb-2"
-      >
+<div class="menu-page">
+  <div class="menu-page__container">
+    <div class="menu-page__header">
+      <h1 class="menu-page__title">
         {{ page.title }}
       </h1>
-      <p class="text-[#6F6861] text-lg">
+      <p class="menu-page__description">
         {{ page.description }}
       </p>
     </div>
     
     <!-- Beverages Section -->
-    <section class="mb-12">
-      <h2
-        class="text-[#1b140e] text-3xl font-semibold tracking-tight mb-6 pb-3 border-b border-[#f3ede7]"
-      >
+    <section class="menu-page__section">
+      <h2 class="menu-page__section-title">
         Drikkevarer
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+      <div class="menu-page__items">
         {% for beverage in site.data.menu.beverages %}
-          <div class="flex justify-between items-start py-3">
+          <div class="menu-page__item">
             <div>
-              <h3 class="text-[#1b140e] text-lg font-semibold">{{ beverage.name }}</h3>
-              <p class="text-[#97734e] text-sm">
+              <h3 class="menu-page__item-name">{{ beverage.name }}</h3>
+              <p class="menu-page__item-description">
                 {{ beverage.description }}
               </p>
             </div>
-            <p class="text-[#1b140e] text-lg font-semibold">{{ beverage.price }}</p>
+            <p class="menu-page__item-price">{{ beverage.price }}</p>
           </div>
         {% endfor %}
       </div>
     </section>
     
     <!-- Pastries Section -->
-    <section class="mb-12">
-      <h2
-        class="text-[#1b140e] text-3xl font-semibold tracking-tight mb-6 pb-3 border-b border-[#f3ede7]"
-      >
+    <section class="menu-page__section">
+      <h2 class="menu-page__section-title">
         Bagværk
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+      <div class="menu-page__items">
         {% for pastry in site.data.menu.pastries %}
-          <div class="flex justify-between items-start py-3">
+          <div class="menu-page__item">
             <div>
-              <h3 class="text-[#1b140e] text-lg font-semibold">{{ pastry.name }}</h3>
-              <p class="text-[#97734e] text-sm">
+              <h3 class="menu-page__item-name">{{ pastry.name }}</h3>
+              <p class="menu-page__item-description">
                 {{ pastry.description }}
               </p>
             </div>
-            <p class="text-[#1b140e] text-lg font-semibold">{{ pastry.price }}</p>
+            <p class="menu-page__item-price">{{ pastry.price }}</p>
           </div>
         {% endfor %}
       </div>
     </section>
     
     <!-- Sandwiches Section -->
-    <section>
-      <h2
-        class="text-[#1b140e] text-3xl font-semibold tracking-tight mb-6 pb-3 border-b border-[#f3ede7]"
-      >
+    <section class="menu-page__section">
+      <h2 class="menu-page__section-title">
         Sandwiches
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+      <div class="menu-page__items">
         {% for sandwich in site.data.menu.sandwiches %}
-          <div class="flex justify-between items-start py-3">
+          <div class="menu-page__item">
             <div>
-              <h3 class="text-[#1b140e] text-lg font-semibold">{{ sandwich.name }}</h3>
-              <p class="text-[#97734e] text-sm">
+              <h3 class="menu-page__item-name">{{ sandwich.name }}</h3>
+              <p class="menu-page__item-description">
                 {{ sandwich.description }}
               </p>
             </div>
-            <p class="text-[#1b140e] text-lg font-semibold">{{ sandwich.price }}</p>
+            <p class="menu-page__item-price">{{ sandwich.price }}</p>
           </div>
         {% endfor %}
       </div>

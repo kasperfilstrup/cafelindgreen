@@ -1,23 +1,15 @@
 {
   "name": "cafe-lindgreen-performance",
   "version": "1.0.0",
-  "description": "Performance-optimized Jekyll site for Café Lindgreen",
+  "description": "Jekyll site for Café Lindgreen",
   "scripts": {
-    "css:build": "NODE_ENV=production tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
     "dev": "bundle exec jekyll serve --livereload",
-    "build": "npm run css:build && JEKYLL_ENV=production bundle exec jekyll build"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.22",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.0"
+    "build": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.production.yml"
   },
   "keywords": [
     "jekyll",
-    "performance",
-    "tailwindcss",
     "cafe"
   ],
-  "author": "Performance Optimization",
+  "author": "",
   "license": "MIT"
 }

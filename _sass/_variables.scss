@@ -16,15 +16,16 @@
   --color-footer-light: #978b7e;
   --color-footer-border: #3a3027;
   --color-contact: #574533;
-  --color-menu-text: #6F6861;
+  --color-menu-text: #6f6861;
   --color-menu-desc: #97734e;
   --color-contact-desc: #7e6a55;
   --color-white: #fff;
 
   // Typography
-  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  // --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-ballet: 'Ballet', sans-serif;
   --font-noto: 'Noto Sans', sans-serif;
-  --font-family: var(--font-jakarta);
+  --font-family: var(--font-noto);
 
   // Spacing (Tailwind rem equivalents)
   --spacing-1: 0.25rem;
@@ -68,16 +69,21 @@ $breakpoint-xl: 1280px;
 // Mixins for responsive design
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'sm' {
-    @media (min-width: $breakpoint-sm) { @content; }
-  }
-  @else if $breakpoint == 'md' {
-    @media (min-width: $breakpoint-md) { @content; }
-  }
-  @else if $breakpoint == 'lg' {
-    @media (min-width: $breakpoint-lg) { @content; }
-  }
-  @else if $breakpoint == 'xl' {
-    @media (min-width: $breakpoint-xl) { @content; }
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
   }
 }
 

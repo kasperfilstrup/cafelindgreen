@@ -1,0 +1,6 @@
+# Production-specific configuration
+# This file overrides settings from _config.yml for production builds
+
+# SASS settings for production
+sass:
+  style: compressed

@@ -1,5 +1,5 @@
 # Site settings
-title: 'Café Lindgreen'
+title: 'Café Under Elmene'
 description: 'Omfavner skandinavisk enkelhed, én kop ad gangen.'
 baseurl: '/cafelindgreen' # the subpath of your site, e.g. /blog
 url: 'https://kasperfilstrup.github.io' # the base hostname & protocol for your site
@@ -30,7 +30,7 @@ markdown: kramdown
 # SASS settings
 sass:
   sass_dir: _sass
-  style: compressed
+  style: expanded
 
 # Permalink settings for clean URLs
 permalink: pretty
@@ -54,3 +54,4 @@ exclude:
   - src/
   - vendor/
   - .bundle/
+  - _config.production.yml
