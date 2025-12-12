@@ -1,0 +1,229 @@
+// ========================================
+// Component Styles
+// ========================================
+
+// Header Component
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-4) var(--spacing-6);
+
+  @include respond-to('md') {
+    padding-left: var(--spacing-10);
+    padding-right: var(--spacing-10);
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--color-dark);
+  position: absolute;
+  left: var(--spacing-4);
+
+  &__icon {
+    width: var(--spacing-10);
+    height: var(--spacing-10);
+    color: var(--color-primary);
+  }
+
+  &__text {
+    color: var(--color-dark);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: var(--letter-spacing-tight-custom);
+  }
+}
+
+.header-nav {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-8);
+
+  @include respond-to('md') {
+    display: flex;
+  }
+
+  &__link {
+    color: var(--color-text);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    @include transition(color);
+
+    &:hover {
+      color: var(--color-dark);
+    }
+
+    &--active {
+      color: var(--color-dark);
+    }
+  }
+}
+
+// Footer Component
+.site-footer {
+  background-color: var(--color-dark);
+  color: var(--color-footer);
+  padding: var(--spacing-12) 0;
+
+  @include respond-to('md') {
+    padding: var(--spacing-16) 0;
+  }
+
+  &__container {
+    max-width: var(--max-width-5xl);
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+
+    @include respond-to('md') {
+      padding: 0 var(--spacing-10);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-8);
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-3);
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    color: var(--color-footer-text);
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: var(--spacing-2);
+    }
+
+    a {
+      font-size: 0.875rem;
+      color: var(--color-footer-text);
+      @include transition(color);
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: var(--spacing-4);
+
+    a {
+      color: var(--color-footer-text);
+      @include transition(color);
+
+      &:hover {
+        color: var(--color-white);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid var(--color-footer-border);
+    padding-top: var(--spacing-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--color-footer-light);
+
+    @include respond-to('md') {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-4);
+
+    @include respond-to('md') {
+      margin-top: 0;
+    }
+
+    a {
+      @include transition(color);
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+}
+
+// Button Component (from your Tailwind)
+.cafe-btn {
+  display: inline-flex;
+  height: 3rem;
+  min-width: 84px;
+  max-width: var(--max-width-480);
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+  padding: 0 var(--spacing-6);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing-normal);
+  color: var(--color-white);
+  @include transition(background-color);
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}
+
+// Card Component (from your Tailwind)
+.cafe-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  background-color: var(--color-white);
+  padding: var(--spacing-6);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition-property: box-shadow;
+  transition-timing-function: var(--transition-timing);
+  transition-duration: var(--transition-base);
+
+  &:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+}

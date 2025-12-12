@@ -4,12 +4,8 @@
   "description": "Performance-optimized Jekyll site for Café Lindgreen",
   "scripts": {
     "css:build": "NODE_ENV=production tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
-    "css:watch": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch --poll",
-    "css:dev": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css",
-    "dev": "npm run css:watch & bundle exec jekyll serve",
-    "build": "npm run css:build && JEKYLL_ENV=production bundle exec jekyll build",
-    "serve": "npm run css:dev && bundle exec jekyll serve",
-    "predeploy": "npm run css:build"
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "npm run css:build && JEKYLL_ENV=production bundle exec jekyll build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.22",

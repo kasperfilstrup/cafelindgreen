@@ -27,6 +27,11 @@ navigation:
 # Build settings
 markdown: kramdown
 
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Permalink settings for clean URLs
 permalink: pretty
 

@@ -1,0 +1,89 @@
+// ========================================
+// Design Tokens - Cafe Lindgreen
+// ========================================
+
+// CSS Custom Properties (runtime theming)
+:root {
+  // Brand Colors
+  --color-cream: #fcfaf8;
+  --color-dark: #1b140e;
+  --color-border: #f3ede7;
+  --color-primary: #e57f19;
+  --color-primary-dark: #d17316;
+  --color-text: #5a4e45;
+  --color-footer: #f3ede7;
+  --color-footer-text: #b8a899;
+  --color-footer-light: #978b7e;
+  --color-footer-border: #3a3027;
+  --color-contact: #574533;
+  --color-menu-text: #6F6861;
+  --color-menu-desc: #97734e;
+  --color-contact-desc: #7e6a55;
+  --color-white: #fff;
+
+  // Typography
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-noto: 'Noto Sans', sans-serif;
+  --font-family: var(--font-jakarta);
+
+  // Spacing (Tailwind rem equivalents)
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+
+  // Max widths
+  --max-width-2xl: 42rem;
+  --max-width-3xl: 48rem;
+  --max-width-4xl: 56rem;
+  --max-width-5xl: 64rem;
+  --max-width-960: 960px;
+  --max-width-480: 480px;
+
+  // Letter spacing
+  --letter-spacing-tight: -0.033em;
+  --letter-spacing-tight-custom: -0.015em;
+  --letter-spacing-normal: 0.015em;
+
+  // Transitions
+  --transition-fast: 150ms;
+  --transition-base: 300ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// SASS Variables (compile-time)
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Mixins for responsive design
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) { @content; }
+  }
+  @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+  @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// Utility mixins
+@mixin transition($property: all) {
+  transition-property: $property;
+  transition-timing-function: var(--transition-timing);
+  transition-duration: var(--transition-fast);
+}

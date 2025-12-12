@@ -1,0 +1,65 @@
+// ========================================
+// Layout Styles
+// ========================================
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+
+.layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+// Container utilities
+.container {
+  max-width: var(--max-width-5xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+
+  @include respond-to('md') {
+    padding-left: var(--spacing-10);
+    padding-right: var(--spacing-10);
+  }
+}
+
+.container-narrow {
+  max-width: var(--max-width-3xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+// Grid utilities
+.grid {
+  display: grid;
+  gap: var(--spacing-8);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  @include respond-to('md') {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.grid-2-col {
+  @include respond-to('sm') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

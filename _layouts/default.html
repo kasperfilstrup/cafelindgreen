@@ -3,15 +3,12 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="bg-[#fcfaf8]">
-    <div
-      class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
-      style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
+  <body>
+    <div class="page-wrapper">
+      <div class="layout-container">
         {% include header.html %}
 
-        <main class="flex flex-1 flex-col">{{ content }}</main>
+        <main>{{ content }}</main>
 
         {% include footer.html %}
       </div>
