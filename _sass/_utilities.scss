@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 80px);
+    min-height: calc(50vh);
 
     @include respond-to('md') {
       padding-left: var(--spacing-10);
@@ -43,7 +43,7 @@
     color: var(--color-white);
     mix-blend-mode: overlay;
     font-family: var(--font-ballet);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.85;
     letter-spacing: var(--letter-spacing-tight);
