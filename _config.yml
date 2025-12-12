@@ -45,6 +45,7 @@ exclude:
   - package.json
   - package-lock.json
   - tailwind.config.js
+  - postcss.config.js
   - src/
   - vendor/
   - .bundle/

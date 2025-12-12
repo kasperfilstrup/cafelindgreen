@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./_includes/**/*.html",
     "./_layouts/**/*.html",
-    "./_includes/**/*.html", 
-    "./*.md",
-    "./_posts/**/*.md",
-    "./_sass/**/*.scss"
+    "./_posts/**/*.{md,html}",
+    "./_drafts/**/*.{md,html}",
+    "./*.{html,md}",
+    "./pages/**/*.{html,md}"
   ],
-  // In development mode, include all classes via safelist
-  safelist: process.env.NODE_ENV === 'development' ? [
-    {
-      pattern: /./, // Include all classes in development
-    }
-  ] : [
+  // Safelist commonly used classes
+  safelist: [
     'text-white',
-    'hover:text-white', 
+    'hover:text-white',
     'transition-colors',
     'group-hover:bg-cafe-orange/10'
   ],
