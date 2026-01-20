@@ -16,15 +16,15 @@
 
   img {
     display: block;
-    width: 50%;
+    width: 90%;
     max-width: 960px;
     height: auto;
     object-fit: cover;
     filter: saturate(0.5);
 
     @include respond-to('md') {
-      width: 60%;
       margin-right: 200px;
+      width: 50%;
     }
   }
 }
