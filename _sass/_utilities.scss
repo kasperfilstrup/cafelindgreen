@@ -79,10 +79,11 @@
   }
 
   &__description {
-    color: var(--color-text);
+    color: var(--primary-600);
     font-size: 1rem;
     line-height: 1.5;
-    max-width: var(--max-width-2xl);
+    text-align: center;
+    margin-bottom: var(--spacing-4);
 
     @include respond-to('sm') {
       font-size: 1.125rem;
