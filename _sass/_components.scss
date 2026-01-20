@@ -2,16 +2,7 @@
 // Component Styles
 // ========================================
 
-// Header Component
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  // border-bottom: 1px solid var(--color-border);
-  padding: var(--spacing-4) var(--spacing-10);
-}
-
+// Header Component (base styles in _critical.scss)
 .header-logo {
   display: flex;
   align-items: center;
@@ -37,25 +28,16 @@
   }
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-8);
+// Header nav interactive styles (base in _critical.scss)
+.header-nav__link {
+  @include transition(color);
 
-  &__link {
-    color: var(--primary-400);
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.5;
-    @include transition(color);
+  &:hover {
+    color: var(--primary-600);
+  }
 
-    &:hover {
-      color: var(--primary-600);
-    }
-
-    &--active {
-      color: var(--primary-500);
-    }
+  &--active {
+    color: var(--primary-500);
   }
 }
 
@@ -157,7 +139,7 @@
   color: var(--color-white);
   cursor: pointer;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   height: 3rem;
   justify-content: center;
@@ -169,6 +151,10 @@
   min-width: 84px;
   overflow: hidden;
   padding: 0 var(--spacing-6);
+
+  @include respond-to('sm') {
+    font-size: 1rem;
+  }
 
   &:hover {
     background-color: var(--color-primary-dark);

@@ -81,10 +81,12 @@ description: 'Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
     </div>
     <section>
       <div class="contact-page__map">
-        <picture>
-          <source media="(min-width: 640px)" srcset="{{ '/assets/images/cafe-manna-kort.webp' | relative_url }}">
-          <img src="{{ '/assets/images/cafe-manna-kort--small.webp' | relative_url }}" alt="{{ site.title }}" width="460" height="261" fetchpriority="high" />
-        </picture>
+        <a href="https://www.google.com/maps/search/{{ site.address | uri_escape }}" target="_blank" rel="noopener">
+          <picture>
+            <source media="(min-width: 640px)" srcset="{{ '/assets/images/cafe-manna-kort.webp' | relative_url }}">
+            <img src="{{ '/assets/images/cafe-manna-kort--small.webp' | relative_url }}" alt="{{ site.title }}" width="460" height="261" fetchpriority="high" />
+          </picture>
+        </a>
       </div>
     </section>
   </div>

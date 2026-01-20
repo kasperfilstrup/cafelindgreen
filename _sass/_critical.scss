@@ -151,10 +151,14 @@ p {
 
   &__link {
     color: var(--primary-400);
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.5;
     text-decoration: none;
+
+    @media (min-width: 640px) {
+      font-size: 0.875rem;
+    }
   }
 }
 
@@ -202,13 +206,24 @@ p {
   }
 
   &__description {
-    font-size: 1.125rem;
+    color: var(--color-menu-text);
+    font-size: 1.25rem;
+
+    @media (min-width: 640px) {
+      font-size: 1.125rem;
+    }
   }
 }
 
 // Contact page (above the fold)
 .contact-page {
   flex: 1;
+  color: var(--color-menu-text);
+  font-size: 1.25rem;
+
+  @media (min-width: 640px) {
+    font-size: 1.125rem;
+  }
 
   @media (min-width: 1024px) {
     padding-left: var(--spacing-20);
@@ -255,13 +270,14 @@ p {
 
   img {
     display: block;
-    width: 50%;
+    width: 90%;
     max-width: 960px;
     height: auto;
     object-fit: cover;
+    filter: saturate(0.5);
 
     @media (min-width: 768px) {
-      width: 60%;
+      width: 70%;
       margin-right: 200px;
     }
   }

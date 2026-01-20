@@ -2,46 +2,8 @@
 // Utility Classes
 // ========================================
 
-// Hero Section
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+// Hero, .page, .page-padding base styles are in _critical.scss
 
-  @include respond-to('md') {
-    height: 80vh;
-  }
-
-  img {
-    display: block;
-    width: 90%;
-    max-width: 960px;
-    height: auto;
-    object-fit: cover;
-    filter: saturate(0.5);
-
-    @include respond-to('md') {
-      margin-right: 200px;
-      width: 70%;
-    }
-  }
-}
-
-// Page Section
-.page {
-  &__title {
-    margin-bottom: var(--spacing-8);
-  }
-  &__description {
-    margin-bottom: var(--spacing-20);
-  }
-}
-
-.page-padding {
-  padding: var(--spacing-12) var(--spacing-6);
-}
 .page-section {
   padding: var(--spacing-16) var(--spacing-6);
 
@@ -80,7 +42,7 @@
 
   &__description {
     color: var(--primary-600);
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     text-align: center;
     margin-bottom: var(--spacing-4);
@@ -135,45 +97,8 @@
   }
 }
 
-// Contact Page
+// Contact Page (base styles in _critical.scss)
 .contact-page {
-  flex: 1;
-
-  @include respond-to('lg') {
-    padding-left: var(--spacing-20);
-    padding-right: var(--spacing-20);
-  }
-
-  @include respond-to('xl') {
-    padding-left: var(--spacing-20);
-    padding-right: var(--spacing-20);
-  }
-
-  &__container {
-    margin: 0 auto;
-    max-width: var(--max-width-4xl);
-  }
-
-  &__header {
-    margin-bottom: var(--spacing-10);
-    text-align: center;
-  }
-
-  &__title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-
-    @include respond-to('sm') {
-      font-size: 3rem;
-    }
-  }
-
-  &__description {
-    font-size: 1.125rem;
-    line-height: 1.625;
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -198,16 +123,23 @@
 
   &__info-item-label {
     color: var(--primary-600);
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: var(--spacing-1);
+
+    @include respond-to('sm') {
+      font-size: 0.875rem;
+    }
   }
 
   &__info-item-value {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--primary-500);
+    @include respond-to('sm') {
+      font-size: 1rem;
+    }
   }
 
   &__social {
@@ -220,13 +152,16 @@
       align-items: center;
       gap: var(--spacing-2);
       border-radius: 0.5rem;
-      padding: var(--spacing-4);
       @include transition(all);
-      width: 7rem;
+
+      @include respond-to('sm') {
+        padding: var(--spacing-4);
+        width: 4rem;
+      }
 
       &:hover {
         background-color: var(--color-footer);
-        color: var(--color-primary);
+        color: var(--primary-500);
       }
 
       .icon-wrapper {
@@ -258,45 +193,8 @@
   }
 }
 
-// Menu Page
+// Menu Page (base styles in _critical.scss)
 .menu-page {
-  flex: 1;
-
-  @include respond-to('md') {
-    padding-left: var(--spacing-20);
-    padding-right: var(--spacing-20);
-  }
-
-  @include respond-to('lg') {
-    padding-left: var(--spacing-20);
-    padding-right: var(--spacing-20);
-  }
-
-  &__container {
-    margin: 0 auto;
-    max-width: var(--max-width-960);
-  }
-
-  &__header {
-    margin-bottom: var(--spacing-12);
-    text-align: center;
-  }
-
-  &__title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-
-    @include respond-to('md') {
-      font-size: 3rem;
-    }
-  }
-
-  &__description {
-    color: var(--color-menu-text);
-    font-size: 1.125rem;
-  }
-
   &__section {
     margin-bottom: var(--spacing-12);
   }
@@ -336,13 +234,18 @@
 
   &__item-description {
     color: var(--color-menu-desc);
-    font-size: 0.875rem;
+    font-size: 1.1rem;
+
+    @include respond-to('sm') {
+      font-size: 0.875rem;
+    }
   }
 
   &__item-price {
     color: var(--primary-600);
     font-size: 1.125rem;
     font-weight: 600;
+    white-space: pre;
   }
 }
 
