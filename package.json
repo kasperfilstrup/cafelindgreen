@@ -1,11 +1,13 @@
 {
-  "name": "cafe-lindgreen-performance",
+  "name": "cafe-manna",
   "version": "1.0.0",
-  "description": "Jekyll site for Café Lindgreen",
+  "description": "Jekyll site for Café Manna",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload",
     "build": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.production.yml && npm run purge",
-    "purge": "purgecss --css _site/assets/css/main.css --content '_site/**/*.html' --output _site/assets/css/"
+    "purge": "purgecss --css _site/assets/css/main.css --content '_site/**/*.html' --output _site/assets/css/",
+    "prepare": "husky",
+    "inline-critical-css": "node scripts/inline-critical-css.js"
   },
   "keywords": [
     "jekyll",
@@ -14,6 +16,15 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "purgecss": "^6.0.0"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "purgecss": "^6.0.0",
+    "sass": "^1.97.2"
+  },
+  "lint-staged": {
+    "_sass/**/*.scss": [
+      "npm run inline-critical-css",
+      "git add _includes/head.html"
+    ]
   }
 }
