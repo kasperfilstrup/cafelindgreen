@@ -4,12 +4,16 @@
   "description": "Jekyll site for Café Lindgreen",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload",
-    "build": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.production.yml"
+    "build": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.production.yml && npm run purge",
+    "purge": "purgecss --css _site/assets/css/main.css --content '_site/**/*.html' --output _site/assets/css/"
   },
   "keywords": [
     "jekyll",
     "cafe"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "purgecss": "^6.0.0"
+  }
 }

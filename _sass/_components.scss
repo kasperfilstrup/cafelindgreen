@@ -64,9 +64,6 @@
   padding: var(--spacing-12) 0;
   text-align: center;
 
-  @include respond-to('sm') {
-    text-align: left;
-  }
   @include respond-to('md') {
     padding: var(--spacing-16) 0;
   }
@@ -88,7 +85,7 @@
     margin-bottom: var(--spacing-8);
 
     @include respond-to('md') {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
 
@@ -126,10 +123,6 @@
     gap: var(--spacing-4);
     justify-content: center;
 
-    @include respond-to('sm') {
-      justify-content: flex-start;
-    }
-
     a {
       @include transition(color);
 
@@ -147,10 +140,10 @@
     flex-direction: column;
     align-items: center;
     font-size: 0.875rem;
+    justify-content: center;
 
     @include respond-to('md') {
       flex-direction: row;
-      justify-content: space-between;
     }
   }
 }

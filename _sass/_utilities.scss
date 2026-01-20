@@ -20,6 +20,7 @@
     // max-width: 800px;
     height: auto;
     object-fit: cover;
+    filter: saturate(0.5);
 
     @include respond-to('md') {
       width: 60%;
