@@ -246,6 +246,16 @@
       }
     }
   }
+
+  &__map {
+    margin-top: var(--spacing-20);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: brightness(1.05) contrast(0.9) saturate(0.6) hue-rotate(10deg);
+    }
+  }
 }
 
 // Menu Page
