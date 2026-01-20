@@ -5,77 +5,33 @@
 // Hero Section
 .hero {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-  &__bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  @include respond-to('md') {
+    height: 80vh;
   }
 
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
-  }
-
-  &__content {
-    position: relative;
-    padding: var(--spacing-24) var(--spacing-6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: calc(50vh);
+  img {
+    display: block;
+    width: 80%;
+    // max-width: 800px;
+    height: auto;
+    object-fit: cover;
 
     @include respond-to('md') {
-      padding-left: var(--spacing-10);
-      padding-right: var(--spacing-10);
-      padding-top: var(--spacing-20);
-      padding-bottom: var(--spacing-20);
-      min-height: 600px;
-    }
-  }
-
-  &__title {
-    color: var(--color-white);
-    mix-blend-mode: overlay;
-    font-family: var(--font-ballet);
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.85;
-    letter-spacing: var(--letter-spacing-tight);
-
-    @include respond-to('sm') {
-      font-size: 3rem;
-    }
-
-    @include respond-to('md') {
-      font-size: 5.25rem;
-    }
-
-    @include respond-to('lg') {
-      font-size: 8.25rem;
-    }
-  }
-
-  &__subtitle {
-    color: var(--color-white);
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-top: var(--spacing-4);
-    margin-bottom: var(--spacing-8);
-
-    @include respond-to('sm') {
-      font-size: 1.125rem;
+      width: 60%;
+      margin-right: 200px;
     }
   }
 }
 
 // Page Section
+.page-padding {
+  padding: var(--spacing-12) var(--spacing-6);
+}
 .page-section {
   padding: var(--spacing-16) var(--spacing-6);
 
@@ -83,12 +39,12 @@
     padding: var(--spacing-24) var(--spacing-10);
   }
 
-  &--cream {
-    background-color: var(--color-cream);
+  &--rosa {
+    background-color: var(--primary-200);
   }
 
-  &--light {
-    background-color: var(--color-footer);
+  &--blue {
+    background-color: var(--secondary-200);
   }
 
   &__header {
@@ -101,7 +57,7 @@
   }
 
   &__title {
-    color: var(--color-dark);
+    color: var(--primary-500);
     font-size: 1.875rem;
     font-weight: 500;
     line-height: 1.25;
@@ -157,7 +113,6 @@
   }
 
   &__title {
-    color: var(--color-dark);
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5;
@@ -165,7 +120,6 @@
   }
 
   &__description {
-    color: var(--color-contact-desc);
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
@@ -175,7 +129,6 @@
 // Contact Page
 .contact-page {
   flex: 1;
-  padding: var(--spacing-12) var(--spacing-10);
 
   @include respond-to('lg') {
     padding-left: var(--spacing-20);
@@ -198,7 +151,6 @@
   }
 
   &__title {
-    color: var(--color-dark);
     font-size: 2.25rem;
     font-weight: 700;
     letter-spacing: -0.025em;
@@ -210,7 +162,6 @@
 
   &__description {
     margin-top: var(--spacing-4);
-    color: var(--color-contact);
     font-size: 1.125rem;
     line-height: 1.625;
   }
@@ -226,7 +177,6 @@
   }
 
   &__section-title {
-    color: var(--color-dark);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: var(--spacing-6);
@@ -239,7 +189,7 @@
   }
 
   &__info-item-label {
-    color: var(--color-primary);
+    color: var(--primary-600);
     font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -248,20 +198,8 @@
   }
 
   &__info-item-value {
-    color: var(--color-contact);
     font-size: 1rem;
-  }
-
-  &__map {
-    margin-top: var(--spacing-8);
-    aspect-ratio: 16/9;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -4px rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    background-position: center;
+    color: var(--primary-500);
   }
 
   &__social {
@@ -275,7 +213,6 @@
       gap: var(--spacing-2);
       border-radius: 0.5rem;
       padding: var(--spacing-4);
-      color: var(--color-contact);
       @include transition(all);
       width: 7rem;
 
@@ -306,7 +243,6 @@
 // Menu Page
 .menu-page {
   flex: 1;
-  padding: var(--spacing-12) var(--spacing-10);
 
   @include respond-to('md') {
     padding-left: var(--spacing-20);
@@ -329,7 +265,6 @@
   }
 
   &__title {
-    color: var(--color-dark);
     font-size: 2.25rem;
     font-weight: 700;
     letter-spacing: -0.025em;
@@ -350,13 +285,12 @@
   }
 
   &__section-title {
-    color: var(--color-dark);
     font-size: 1.875rem;
     font-weight: 600;
     letter-spacing: -0.025em;
     margin-bottom: var(--spacing-6);
     padding-bottom: var(--spacing-3);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--primary-200);
   }
 
   &__items {
@@ -378,7 +312,7 @@
   }
 
   &__item-name {
-    color: var(--color-dark);
+    color: var(--primary-600);
     font-size: 1.125rem;
     font-weight: 600;
   }
@@ -389,7 +323,7 @@
   }
 
   &__item-price {
-    color: var(--color-dark);
+    color: var(--primary-600);
     font-size: 1.125rem;
     font-weight: 600;
   }

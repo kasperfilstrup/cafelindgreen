@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Kontakt Os"
-description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om vores menu, ønsker at booke et bord, eller bare vil sige hej, så tøv ikke med at kontakte os."
+title: 'Kontakt Os'
+description: 'Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om vores menu, ønsker at booke et bord, eller bare vil sige hej, så tøv ikke med at kontakte os.'
 ---
 
-<div class="contact-page">
+<div class="contact-page page-padding">
   <div class="contact-page__container">
     <header class="contact-page__header">
       <h1 class="contact-page__title">
@@ -25,7 +25,10 @@ description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
               Adresse
             </h3>
             <p class="contact-page__info-item-value">
+              <a href="https://www.google.com/maps/search/{{ site.address | uri_escape }}" target="_blank" rel="noopener">
               {{ site.address }}
+              </a>
+
             </p>
           </div>
           <div>
@@ -43,12 +46,6 @@ description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
             </p>
           </div>
         </div>
-        <div
-          class="contact-page__map"
-          style="
-            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBznOdCTZQ18_it9gPmFfTtU3D2UY4lf9wykw6yJiwGajT-3u40Dvmy9pDNKy9LfUEVFD08HaXGwJGjTBxtKtm2TIsM4jc3JZd2jyaI94GmfQuaTTTaIq68VuMb5DUoIDocFzn9nv476AuEQg4r_Pr3gDu-_tMDpf3PNA_T7vVb2Y_Gr9YwwP5gWJg6KQBptbjj8yXjYjDqQ5hoCu21wIP9Ld1AFlm5Oa-v9JWs7f63l0OdpWfFJpdernEhUNHNngKvvKlTwIY7tr8');
-          "
-        ></div>
       </section>
       <section>
         <h2 class="contact-page__section-title">
@@ -86,5 +83,6 @@ description: "Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
         </div>
       </section>
     </div>
+
   </div>
 </div>

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Vores Menu"
-description: "Friskbrygget kaffe, lækre bagværk og velsmagende sandwiches."
+title: 'Vores Menu'
+description: 'Friskbrygget kaffe, lækre bagværk og velsmagende sandwiches.'
 ---
 
-<div class="menu-page">
+<div class="menu-page page-padding">
   <div class="menu-page__container">
     <div class="menu-page__header">
       <h1 class="menu-page__title">

@@ -5,6 +5,7 @@
         <h3 class="site-footer__title">{{ site.title }}</h3>
         <p class="site-footer__description">{{ site.description }}</p>
       </div>
+      {% comment %}
       <div>
         <h3 class="site-footer__title">Hurtige Links</h3>
         <ul class="site-footer__links">
@@ -19,11 +20,12 @@
           {% endfor %}
         </ul>
       </div>
+      {% endcomment %}
       <div>
         <h3 class="site-footer__title">Forbind</h3>
         <div class="site-footer__social">
           <a
-            href="#"
+            href="{{ site.social.instagram | uri_escape }}"
             aria-label="Instagram"
           >
             <svg
@@ -37,7 +39,7 @@
             </svg>
           </a>
           <a
-            href="#"
+            href="{{ site.social.facebook | uri_escape }}"
             aria-label="Facebook"
           >
             <svg
@@ -54,14 +56,7 @@
       </div>
     </div>
     <div class="site-footer__bottom">
-      <p>
-        © {{ 'now' | date: "%Y" }} {{ site.title }}. Alle rettigheder
-        forbeholdes.
-      </p>
-      <div class="site-footer__bottom-links">
-        <a href="#">Privatlivspolitik</a>
-        <a href="#">Servicevilkår</a>
-      </div>
+      <p>© {{ 'now' | date: "%Y" }} {{ site.title }}</p>
     </div>
   </div>
 </footer>

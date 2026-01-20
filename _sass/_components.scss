@@ -10,7 +10,6 @@
   white-space: nowrap;
   // border-bottom: 1px solid var(--color-border);
   padding: var(--spacing-4) var(--spacing-10);
-  background: var(--color-dusty-blue);
 }
 
 .header-logo {
@@ -39,16 +38,12 @@
 }
 
 .header-nav {
-  display: none;
+  display: flex;
   align-items: center;
   gap: var(--spacing-8);
 
-  @include respond-to('md') {
-    display: flex;
-  }
-
   &__link {
-    color: #c6d9d7;
+    color: var(--primary-400);
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.5;
@@ -59,17 +54,19 @@
     }
 
     &--active {
-      color: #fff;
+      color: var(--primary-500);
     }
   }
 }
 
 // Footer Component
 .site-footer {
-  background-color: #283937;
-  color: var(--color-footer);
   padding: var(--spacing-12) 0;
+  text-align: center;
 
+  @include respond-to('sm') {
+    text-align: left;
+  }
   @include respond-to('md') {
     padding: var(--spacing-16) 0;
   }
@@ -103,7 +100,6 @@
 
   &__description {
     font-size: 0.875rem;
-    color: var(--color-footer-text);
   }
 
   &__links {
@@ -117,7 +113,6 @@
 
     a {
       font-size: 0.875rem;
-      color: var(--color-footer-text);
       @include transition(color);
 
       &:hover {
@@ -129,14 +124,14 @@
   &__social {
     display: flex;
     gap: var(--spacing-4);
+    justify-content: center;
+
+    @include respond-to('sm') {
+      justify-content: flex-start;
+    }
 
     a {
-      color: var(--color-footer-text);
       @include transition(color);
-
-      &:hover {
-        color: var(--color-white);
-      }
 
       svg {
         width: 24px;
@@ -146,35 +141,16 @@
   }
 
   &__bottom {
-    border-top: 1px solid var(--color-footer-border);
+    border-top: 1px solid var(--primary-200);
     padding-top: var(--spacing-8);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.875rem;
-    color: var(--color-footer-light);
 
     @include respond-to('md') {
       flex-direction: row;
       justify-content: space-between;
-    }
-  }
-
-  &__bottom-links {
-    display: flex;
-    gap: var(--spacing-4);
-    margin-top: var(--spacing-4);
-
-    @include respond-to('md') {
-      margin-top: 0;
-    }
-
-    a {
-      @include transition(color);
-
-      &:hover {
-        color: var(--color-white);
-      }
     }
   }
 }

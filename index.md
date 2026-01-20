@@ -5,29 +5,10 @@ description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede ka
 ---
 
 <section class="hero">
-  <div
-    class="hero__bg"
-    style="
-      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZAQ5vP8FXFo8u5Z7my-ROoag_5ZpVySELNUNSHPpLOtOTBFMiA9CxxVIz5KX5i4Cjx4VCVucB_ovfKQOsknA3kQt4LVs7Iu3AfpUhy_ZgnDRO3VymXGCbccJmwwBzLEIyN1hTDmtWWf0aJzGDHNi67FszUskif4CBxXv3WFBUKQf0EHglvI88FrwBzQ2b2JsosYNS0jKXZmDvEWKpxqxRNxYE1ouarz6VqRYVt121kOYs4nrqv2pWd3yVP8jpBCsJAmc-SBFE_sQ');
-    "
-  ></div>
-  <div class="hero__overlay"></div>
-  <div class="hero__content">
-    <div class="max-w-3xl">
-      <h1 class="hero__title">
-        {{ site.title }}
-      </h1>
-      <!-- <h2 class="hero__subtitle">
-        {{ page.description }}
-      </h2> -->
-      <a href="{{ '/menu/' | relative_url }}" class="cafe-btn">
-        <span class="truncate">Se Menu</span>
-      </a>
-    </div>
-  </div>
+    <img src="{{ '/assets/images/cafe-manna.png' | relative_url }}" alt="{{ site.title }}" />
 </section>
-
-<section class="page-section page-section--cream">
+{% comment %}
+<section class="page-section page-section--rosa page-padding">
   <div class="max-w-5xl mx-auto">
     <div class="page-section__header">
       <h1 class="page-section__title">
@@ -95,13 +76,13 @@ description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede ka
     </div>
   </div>
 </section>
-
+{% endcomment %} 
 <section class="page-section page-section--light text-center">
   <h1 class="page-section__title">
     Besøg Os
   </h1>
   <p class="page-section__description">
-    Oplev varmen fra {{ site.title }} på et sted tæt på dig.
+    Oplev varmen fra {{ site.title }}
   </p>
   <a href="{{ '/contact/' | relative_url }}" class="cafe-btn">
     <span class="truncate">Find os</span>
