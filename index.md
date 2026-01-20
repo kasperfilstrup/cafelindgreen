@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Velkommen til Café Lindgreen'
+title: 'Velkommen til Café Manna'
 description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede kaffe og bagværk.'
 ---
 
