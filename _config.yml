@@ -17,11 +17,11 @@ address: '123 Oak Street, City Center, 10001'
 
 # Navigation
 navigation:
-  - name: 'Forside'
+  - name: 'Hjem'
     url: '/'
   - name: 'Menu'
     url: '/menu/'
-  - name: 'Kontakt'
+  - name: 'Om os'
     url: '/contact/'
 
 # Build settings

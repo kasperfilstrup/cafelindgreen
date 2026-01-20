@@ -6,10 +6,11 @@
 :root {
   // Brand Colors
   --color-cream: #fcfaf8;
+  --color-dusty-blue: #c5d5f1;
   --color-dark: #1b140e;
   --color-border: #f3ede7;
-  --color-primary: #e57f19;
-  --color-primary-dark: #d17316;
+  --color-primary: #d5788d;
+  --color-primary-dark: #8e4b5a;
   --color-text: #5a4e45;
   --color-footer: #f3ede7;
   --color-footer-text: #b8a899;
@@ -23,8 +24,8 @@
 
   // Typography
   // --font-jakarta: 'Plus Jakarta Sans', sans-serif;
-  --font-ballet: 'Ballet', sans-serif;
-  --font-noto: 'Noto Sans', sans-serif;
+  --font-ballet: 'Playfair Display', sans-serif;
+  --font-noto: 'Playfair Display', sans-serif;
   --font-family: var(--font-noto);
 
   // Spacing (Tailwind rem equivalents)

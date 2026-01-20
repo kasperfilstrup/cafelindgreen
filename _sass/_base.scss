@@ -12,12 +12,17 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--color-cream);
-  color: var(--color-dark);
+  background-color: var(--color-dusty-blue);
+  color: var(--color-primary-dark);
 }
 
 // Typography base
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: inherit;
 }
