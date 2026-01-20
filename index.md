@@ -7,7 +7,7 @@ description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede ka
 <section class="hero">
     <picture>
       <source media="(min-width: 640px)" srcset="{{ '/assets/images/cafe-manna.webp' | relative_url }}">
-      <img src="{{ '/assets/images/cafe-manna--small.webp' | relative_url }}" alt="{{ site.title }}" />
+      <img src="{{ '/assets/images/cafe-manna--small.webp' | relative_url }}" alt="{{ site.title }}" width="460" height="307" fetchpriority="high" />
     </picture>
 </section>
 
