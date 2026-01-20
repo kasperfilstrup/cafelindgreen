@@ -50,7 +50,7 @@
     @include transition(color);
 
     &:hover {
-      color: #fff;
+      color: var(--primary-600);
     }
 
     &--active {
