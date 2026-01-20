@@ -30,6 +30,15 @@
 }
 
 // Page Section
+.page {
+  &__title {
+    margin-bottom: var(--spacing-8);
+  }
+  &__description {
+    margin-bottom: var(--spacing-20);
+  }
+}
+
 .page-padding {
   padding: var(--spacing-12) var(--spacing-6);
 }
@@ -74,7 +83,6 @@
     font-size: 1rem;
     line-height: 1.5;
     max-width: var(--max-width-2xl);
-    margin: var(--spacing-4) auto;
 
     @include respond-to('sm') {
       font-size: 1.125rem;
@@ -117,7 +125,6 @@
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: var(--spacing-1);
   }
 
   &__description {
@@ -162,7 +169,6 @@
   }
 
   &__description {
-    margin-top: var(--spacing-4);
     font-size: 1.125rem;
     line-height: 1.625;
   }
@@ -269,7 +275,6 @@
     font-size: 2.25rem;
     font-weight: 700;
     letter-spacing: -0.025em;
-    margin-bottom: var(--spacing-2);
 
     @include respond-to('md') {
       font-size: 3rem;

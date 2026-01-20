@@ -7,10 +7,10 @@ description: 'Vi vil elske at høre fra dig! Uanset om du har et spørgsmål om 
 <div class="contact-page page-padding">
   <div class="contact-page__container">
     <header class="contact-page__header">
-      <h1 class="contact-page__title">
+      <h1 class="contact-page__title page__title">
         {{ page.title }}
       </h1>
-      <p class="contact-page__description">
+      <p class="contact-page__description page__description">
         {{ page.description }}
       </p>
     </header>

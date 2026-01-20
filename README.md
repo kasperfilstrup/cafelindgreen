@@ -1,6 +1,6 @@
-# Café Lindgreen Website
+# Café Manna Website
 
-A beautiful static website for Café Lindgreen built with Jekyll and hosted on GitHub Pages.
+A beautiful static website for Café Manna built with Jekyll and hosted on GitHub Pages.
 
 ## Features
 
@@ -13,26 +13,30 @@ A beautiful static website for Café Lindgreen built with Jekyll and hosted on G
 ## Quick Setup
 
 ### 1. Create GitHub Repository
+
 1. Create a new repository on GitHub
 2. Push this code to the repository:
+
 ```bash
 git init
 git add .
 git commit -m "Initial Jekyll site setup"
 git branch -M main
-git remote add origin https://github.com/yourusername/cafelindgreen.git
+git remote add origin https://github.com/yourusername/cafemanna.git
 git push -u origin main
 ```
 
 ### 2. Enable GitHub Pages
+
 1. Go to your repository → Settings → Pages
 2. Source: Deploy from a branch
 3. Branch: `main` / `/ (root)`
 4. Click Save
 
-Your site will be available at: `https://yourusername.github.io/cafelindgreen`
+Your site will be available at: `https://yourusername.github.io/cafemanna`
 
 ### 3. Custom Domain (Optional)
+
 1. Add a `CNAME` file with your domain name
 2. Configure DNS settings with your domain provider
 3. Enable HTTPS in GitHub Pages settings
@@ -42,6 +46,7 @@ Your site will be available at: `https://yourusername.github.io/cafelindgreen`
 The menu is stored in `_data/menu.yml` and can be easily edited:
 
 ### On GitHub.com (Recommended for family member):
+
 1. Navigate to `_data/menu.yml` in your repository
 2. Click the pencil icon (Edit this file)
 3. Make your changes
@@ -49,21 +54,22 @@ The menu is stored in `_data/menu.yml` and can be easily edited:
 5. The site will automatically rebuild in 1-2 minutes
 
 ### Menu Structure:
+
 ```yaml
 beverages:
-  - name: "Coffee Name"
-    description: "Description of the coffee"
-    price: "$4.50"
+  - name: 'Coffee Name'
+    description: 'Description of the coffee'
+    price: '$4.50'
 
 pastries:
-  - name: "Pastry Name"
-    description: "Description of the pastry"
-    price: "$3.00"
+  - name: 'Pastry Name'
+    description: 'Description of the pastry'
+    price: '$3.00'
 
 sandwiches:
-  - name: "Sandwich Name"
-    description: "Description of the sandwich"
-    price: "$6.00"
+  - name: 'Sandwich Name'
+    description: 'Description of the sandwich'
+    price: '$6.00'
 ```
 
 ## Local Development
@@ -86,7 +92,7 @@ bundle exec jekyll serve
 ## Site Structure
 
 ```
-cafelindgreen/
+cafemanna/
 ├── _config.yml           # Site configuration
 ├── _data/
 │   └── menu.yml          # Menu data (edit this!)
@@ -105,18 +111,23 @@ cafelindgreen/
 ## Customization
 
 ### Contact Information
+
 Edit `_config.yml` to update:
+
 - Site title and description
 - Contact details (phone, email, address)
 - Navigation links
 
 ### Styling
+
 The site uses Tailwind CSS loaded from CDN. For custom styles, you can:
+
 1. Add a `assets/css/style.scss` file
 2. Include custom CSS classes
 3. Modify the Tailwind classes in the HTML templates
 
 ### Content
+
 - **Homepage**: Edit `index.md`
 - **Menu**: Edit `_data/menu.yml`
 - **Contact**: Edit `contact.md` and contact info in `_config.yml`

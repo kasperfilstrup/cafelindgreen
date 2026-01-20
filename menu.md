@@ -7,10 +7,10 @@ description: 'Friskbrygget kaffe, lækre bagværk og velsmagende sandwiches.'
 <div class="menu-page page-padding">
   <div class="menu-page__container">
     <div class="menu-page__header">
-      <h1 class="menu-page__title">
+      <h1 class="menu-page__title page__title">
         {{ page.title }}
       </h1>
-      <p class="menu-page__description">
+      <p class="menu-page__description page__description">
         {{ page.description }}
       </p>
     </div>
