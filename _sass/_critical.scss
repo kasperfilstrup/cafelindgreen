@@ -134,3 +134,135 @@ h1, h2 {
 p {
   margin: 0;
 }
+
+// Site header (above the fold)
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: var(--spacing-4) var(--spacing-10);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+
+  &__link {
+    color: var(--primary-400);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+}
+
+// Page section utilities (above the fold on all pages)
+.page-padding {
+  padding: var(--spacing-12) var(--spacing-6);
+}
+
+.page {
+  &__title {
+    margin-bottom: var(--spacing-8);
+  }
+  &__description {
+    margin-bottom: var(--spacing-20);
+  }
+}
+
+// Menu page (above the fold)
+.menu-page {
+  flex: 1;
+
+  @media (min-width: 768px) {
+    padding-left: var(--spacing-20);
+    padding-right: var(--spacing-20);
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--max-width-960);
+  }
+
+  &__header {
+    margin-bottom: var(--spacing-12);
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.125rem;
+  }
+}
+
+// Contact page (above the fold)
+.contact-page {
+  flex: 1;
+
+  @media (min-width: 1024px) {
+    padding-left: var(--spacing-20);
+    padding-right: var(--spacing-20);
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--max-width-4xl);
+  }
+
+  &__header {
+    margin-bottom: var(--spacing-10);
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+
+    @media (min-width: 640px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    line-height: 1.625;
+  }
+}
+
+// Hero section (above the fold on home page)
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    height: 80vh;
+  }
+
+  img {
+    display: block;
+    width: 50%;
+    max-width: 960px;
+    height: auto;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      width: 60%;
+      margin-right: 200px;
+    }
+  }
+}
