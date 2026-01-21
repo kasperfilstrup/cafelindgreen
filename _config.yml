@@ -25,7 +25,7 @@ navigation:
   - name: 'Menu'
     url: '/menu/'
   - name: 'Om os'
-    url: '/contact/'
+    url: '/om-os/'
 
 # Build settings
 markdown: kramdown
