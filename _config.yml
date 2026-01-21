@@ -1,22 +1,22 @@
 # Site settings
 title: 'Café Manna'
 description: 'Omfavner skandinavisk enkelhed, én kop ad gangen.'
-baseurl: '/cafemanna' # the subpath of your site, e.g. /blog
+baseurl: '/mannacafe' # the subpath of your site, e.g. /blog
 url: 'https://kasperfilstrup.github.io' # the base hostname & protocol for your site
 
 # Custom domain configuration (commented out for development)
 # When ready to use custom domain, uncomment these lines and create CNAME file:
 # baseurl: ""
-# url: "https://cafemanna.dk"
-# enforce_ssl: cafemanna.dk
+# url: "https://mannacafe.dk"
+# enforce_ssl: mannacafe.dk
 
 # Contact information
-email: 'cafemanna@gmail.com'
+email: 'mannacafe@gmail.com'
 phone: '+1 (555) 123-4567'
 address: 'Under Elmene 13, 2300 København S'
 social:
-  instagram: 'cafemanna'
-  facebook: 'cafemanna'
+  instagram: 'mannacafe'
+  facebook: 'mannacafe'
 
 # Navigation
 navigation:

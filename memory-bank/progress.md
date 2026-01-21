@@ -75,7 +75,7 @@ sandwiches: [3 items]
 
 - Address: 123 Oak Street, City Center, 10001
 - Phone: +1 (555) 123-4567
-- Email: info@cafemanna.com
+- Email: info@mannacafe.com
 
 ## 🔄 Future Maintenance Tasks
 
@@ -161,11 +161,11 @@ sandwiches: [3 items]
 **Verification Checklist**:
 
 - ✅ Build completed in 0.587 seconds with no errors
-- ✅ Service worker properly processed Jekyll template variables (`{{ site.baseurl }}` → `/cafemanna/`)
+- ✅ Service worker properly processed Jekyll template variables (`{{ site.baseurl }}` → `/mannacafe/`)
 - ✅ All pages generated correctly (index.html, contact/, menu/)
 - ✅ No orphaned Liquid template tags
 - ✅ Critical CSS inline and performance optimizations intact
-- ✅ Proper path handling with `/cafemanna` baseurl
+- ✅ Proper path handling with `/mannacafe` baseurl
 
 **Ready for GitHub Pages Deployment**: Site is fully tested and verified to work correctly
 
@@ -180,7 +180,7 @@ sandwiches: [3 items]
 
 - `_includes/header.html`: Changed `data-prefetch="{{ site.url }}{{ item.url | relative_url }}"` to `data-prefetch="{{ item.url | relative_url }}"`
 - `_includes/footer.html`: Same change applied to footer navigation links
-- Verified in generated HTML: URLs now show as `/cafemanna/menu` instead of absolute URLs
+- Verified in generated HTML: URLs now show as `/mannacafe/menu` instead of absolute URLs
 
 **Final Result**: All mixed content errors eliminated - prefetch and service worker now work correctly on GitHub Pages
 

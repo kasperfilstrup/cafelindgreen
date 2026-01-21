@@ -22,7 +22,7 @@ git init
 git add .
 git commit -m "Initial Jekyll site setup"
 git branch -M main
-git remote add origin https://github.com/yourusername/cafemanna.git
+git remote add origin https://github.com/yourusername/mannacafe.git
 git push -u origin main
 ```
 
@@ -33,7 +33,7 @@ git push -u origin main
 3. Branch: `main` / `/ (root)`
 4. Click Save
 
-Your site will be available at: `https://yourusername.github.io/cafemanna`
+Your site will be available at: `https://yourusername.github.io/mannacafe`
 
 ### 3. Custom Domain (Optional)
 
@@ -92,7 +92,7 @@ bundle exec jekyll serve
 ## Site Structure
 
 ```
-cafemanna/
+mannacafe/
 ├── _config.yml           # Site configuration
 ├── _data/
 │   └── menu.yml          # Menu data (edit this!)

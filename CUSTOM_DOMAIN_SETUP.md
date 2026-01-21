@@ -1,6 +1,6 @@
 # Custom Domain Setup Guide
 
-When you're ready to use `cafemanna.dk`, follow these steps:
+When you're ready to use `mannacafe.dk`, follow these steps:
 
 ## 1. Update Jekyll Configuration
 
@@ -8,13 +8,13 @@ In `_config.yml`, replace the current settings:
 
 ```yaml
 # FROM:
-baseurl: "/cafemanna"
+baseurl: "/mannacafe"
 url: "https://kasperfilstrup.github.io"
 
 # TO:
 baseurl: ""
-url: "https://cafemanna.dk"
-enforce_ssl: cafemanna.dk
+url: "https://mannacafe.dk"
+enforce_ssl: mannacafe.dk
 ```
 
 ## 2. Create CNAME File
@@ -22,7 +22,7 @@ enforce_ssl: cafemanna.dk
 Create a `CNAME` file in the root directory:
 
 ```bash
-echo "cafemanna.dk" > CNAME
+echo "mannacafe.dk" > CNAME
 ```
 
 ## 3. Configure DNS Records
@@ -56,10 +56,10 @@ Value: kasperfilstrup.github.io
 
 ## 5. Test
 
-- Site should be accessible at `https://cafemanna.dk`
+- Site should be accessible at `https://mannacafe.dk`
 - All prefetch URLs will use HTTPS correctly
 - Performance optimizations remain active
 
 ---
 
-**Current Status**: Configured for GitHub Pages development at `https://kasperfilstrup.github.io/cafemanna`
+**Current Status**: Configured for GitHub Pages development at `https://kasperfilstrup.github.io/mannacafe`
