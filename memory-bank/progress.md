@@ -2,7 +2,7 @@
 liquid: false
 ---
 
-# Progress Tracking - Café Manna Jekyll Site
+# Progress Tracking - Manna Café Jekyll Site
 
 ## ✅ What Works (Completed)
 

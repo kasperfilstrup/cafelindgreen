@@ -6,7 +6,7 @@ liquid: false
 
 ## Overview
 
-This document provides step-by-step instructions for converting new static HTML files from AI designers to Jekyll static sites, following the same patterns established for Café Manna.
+This document provides step-by-step instructions for converting new static HTML files from AI designers to Jekyll static sites, following the same patterns established for Manna Café.
 
 ## Prerequisites
 

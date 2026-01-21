@@ -2,7 +2,7 @@
 liquid: false
 ---
 
-# Café Manna Website - Project Brief
+# Manna Café Website - Project Brief
 
 ## Project Overview
 

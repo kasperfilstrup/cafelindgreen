@@ -1,6 +1,6 @@
-# Café Manna Website
+# Manna Café Website
 
-A beautiful static website for Café Manna built with Jekyll and hosted on GitHub Pages.
+A beautiful static website for Manna Café built with Jekyll and hosted on GitHub Pages.
 
 ## Features
 

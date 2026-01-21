@@ -2,7 +2,7 @@
 liquid: false
 ---
 
-# Product Context - Café Manna Website
+# Product Context - Manna Café Website
 
 ## Why This Project Exists
 

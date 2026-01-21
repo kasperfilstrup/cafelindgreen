@@ -1,7 +1,7 @@
 {
   "name": "manna-cafe",
   "version": "1.0.0",
-  "description": "Jekyll site for Café Manna",
+  "description": "Jekyll site for Manna Café",
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload",
     "build": "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.production.yml && npm run purge",

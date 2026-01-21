@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Velkommen til Café Manna'
+title: 'Velkommen til Manna café'
 description: 'Oplev varmen fra skandinavisk gæstfrihed med vores håndlavede kaffe og bagværk.'
 ---
 
