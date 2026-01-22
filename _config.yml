@@ -11,8 +11,8 @@ url: 'https://kasperfilstrup.github.io' # the base hostname & protocol for your 
 # enforce_ssl: mannacafe.dk
 
 # Contact information
-email: 'mannacafe@gmail.com'
-phone: '+1 (555) 123-4567'
+email: 'info@mannacafe.dk'
+phone: ''
 address: 'Under Elmene 13, 2300 København S'
 social:
   instagram: 'mannacafe'
