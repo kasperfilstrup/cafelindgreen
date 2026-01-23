@@ -83,6 +83,7 @@
 }
 
 // SASS Variables (compile-time)
+$breakpoint-xs: 480px;
 $breakpoint-sm: 640px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
@@ -90,7 +91,11 @@ $breakpoint-xl: 1280px;
 
 // Mixins for responsive design
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == 'sm' {
+  @if $breakpoint == 'xs' {
+    @media (min-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm' {
     @media (min-width: $breakpoint-sm) {
       @content;
     }

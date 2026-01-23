@@ -276,15 +276,21 @@ p {
 
   img {
     display: block;
-    width: 90%;
-    max-width: 960px;
+    position: absolute;
+    width: 280%;
     height: auto;
-    object-fit: cover;
+    left: -110%;
+    top: 6%;
     filter: saturate(0.5);
 
-    @media (min-width: 768px) {
-      width: 70%;
-      margin-right: 200px;
+    @media (min-width: 480px) {
+      position: static;
+      left: auto;
+      top: auto;
+      width: 90%;
+      max-width: 960px;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
